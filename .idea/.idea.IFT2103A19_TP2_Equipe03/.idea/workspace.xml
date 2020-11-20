@@ -11,15 +11,34 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/Player_Camera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/Player_Cannon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/Player_Collision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/Player_health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/Labyrinthe/Mortar.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Move.cs" />
         <option value="$PROJECT_DIR$/Assets/Chat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_Move.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_InputName.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Lobby/NetworkPlayerLobby.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Lobby/JoinLobbyMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Lobby/Player_InputName.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Lobby/LobbyNetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Lobby/LobbyMainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_spawnSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/MyNetworkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_Cannon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Labyrinthe/Trap Wall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Labyrinthe/TrapWall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_Camera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Projectile_Explosion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Labyrinthe/Mortar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_Move.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_Collision.cs" />
       </list>
     </option>
   </component>
@@ -72,6 +91,9 @@
       <updated>1604306040390</updated>
       <workItem from="1604306063429" duration="3253000" />
       <workItem from="1605601324659" duration="13879000" />
+      <workItem from="1605689141248" duration="13267000" />
+      <workItem from="1605773618097" duration="10278000" />
+      <workItem from="1605862737981" duration="8986000" />
     </task>
     <servers />
   </component>
@@ -82,5 +104,11 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1605865732213">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605865732213" />
   </component>
 </project>

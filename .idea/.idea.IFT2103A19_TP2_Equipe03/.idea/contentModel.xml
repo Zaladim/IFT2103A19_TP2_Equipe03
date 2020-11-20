@@ -346,11 +346,28 @@
           </e>
           <e p="version.txt" t="Include" />
         </e>
+        <e p="ProgressBar" t="Include">
+          <e p="Scene" t="Include">
+            <e p="Demo.cs" t="Include" />
+          </e>
+          <e p="Script" t="Include">
+            <e p="ProgressBar.cs" t="Include" />
+            <e p="ProgressBarCircle.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scenes" t="Include">
           <e p="Scripts" t="Include">
             <e p="Chat.cs" t="Include" />
+            <e p="Labyrinthe" t="Include">
+              <e p="Mortar.cs" t="Include" />
+              <e p="TrapWall.cs" t="Include" />
+            </e>
+            <e p="Player_Camera.cs" t="Include" />
             <e p="Player_Cannon.cs" t="Include" />
+            <e p="Player_Collision.cs" t="Include" />
+            <e p="Player_health.cs" t="Include" />
             <e p="Player_Move.cs" t="Include" />
+            <e p="Projectile_Explosion.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

@@ -2,38 +2,45 @@
 using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
+using NetworkTransformChild = Mirror.NetworkTransformChild;
 
 public class Player_Cannon : NetworkBehaviour
 {
     [SerializeField] private GameObject projectile;
     [SerializeField] private GameObject cannon;
 
-    [SerializeField] private float rotate = 1.0f;
+    [SerializeField] private float power = 20.0f;
+    [SerializeField] private float cooldown = 0.0f;
     [Client]void Update()
     {
         if (!hasAuthority)
         {
             return;
         }
-        print(cannon.transform.eulerAngles.x);
-        if (Input.GetKey(KeyCode.Space) && cannon.transform.eulerAngles.x > 280.0f)
+        
+        if (cooldown > 0)
         {
-            cannon.transform.Rotate(new Vector3(-rotate, 0.0f, 0.0f) * Time.deltaTime);
-            //cannon.transform.RotateAround(cannon.transform.position, Vector3.left, rotate * Time.deltaTime);
-        } else if (cannon.transform.eulerAngles.x < 340.0f)
-        {
-            cannon.transform.Rotate(new Vector3(rotate, 0.0f, 0.0f) * Time.deltaTime);
-            //cannon.transform.RotateAround(cannon.transform.position, Vector3.left, -rotate * Time.deltaTime);
+            cooldown -= Time.deltaTime;
+            return;
         }
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            GameObject bullet = Instantiate(projectile);
-            Rigidbody rb = bullet.GetComponent<Rigidbody>();
-            bullet.transform.position = cannon.transform.position + cannon.transform.forward * 0.5f;
-            rb.velocity = cannon.transform.forward * 5.0f;
+            CmdFire();
+            cooldown = 2.0f;
         }
         
         
+    }
+
+    [Command]
+    void CmdFire()
+    {
+        GameObject bullet = Instantiate(projectile);
+        Rigidbody rb = bullet.GetComponent<Rigidbody>();
+        bullet.transform.position = cannon.transform.position + cannon.transform.up;
+        rb.velocity = cannon.transform.up * power;
+
+        NetworkServer.Spawn(bullet);
     }
 }

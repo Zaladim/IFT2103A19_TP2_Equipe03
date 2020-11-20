@@ -9,12 +9,17 @@ using Vector3 = UnityEngine.Vector3;
 public class Player_Move : NetworkBehaviour
 {
     [SerializeField] private GameObject avatar;
-    [SerializeField] private GameObject cannon;
     [SerializeField] private float speed = 5.0f;
-    [SerializeField] private float rotate = 5.0f;
+    [SerializeField] private float rotate = 100.0f;
+    [SerializeField] private bool playing = true;
     [Client]private void Update()
     {
         if (!hasAuthority)
+        {
+            return;
+        }
+
+        if (!playing)
         {
             return;
         }
@@ -37,8 +42,18 @@ public class Player_Move : NetworkBehaviour
             transform.RotateAround(avatar.transform.position, Vector3.up, rotate * Time.deltaTime);
         }
 
-        cannon.transform.position = avatar.transform.position + new Vector3(0.0f, 0.4f, 0.0f);
-        cannon.transform.eulerAngles = new Vector3(cannon.transform.eulerAngles.x, avatar.transform.eulerAngles.y, cannon.transform.eulerAngles.z);
+        transform.position =
+            new Vector3(avatar.transform.position.x, transform.position.y, avatar.transform.position.z);
 
+    }
+
+    public void EndGame()
+    {
+        playing = false;
+    }
+
+    public bool GetPlaying()
+    {
+        return playing;
     }
 }
