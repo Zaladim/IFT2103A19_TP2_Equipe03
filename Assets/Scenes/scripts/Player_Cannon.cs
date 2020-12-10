@@ -9,7 +9,7 @@ public class Player_Cannon : NetworkBehaviour
     [SerializeField] private GameObject projectile;
     [SerializeField] private GameObject cannon;
 
-    [SerializeField] private float power = 20.0f;
+    [SerializeField] private float power = 30.0f;
     [SerializeField] private float cooldown = 0.0f;
     [Client]void Update()
     {
@@ -38,8 +38,9 @@ public class Player_Cannon : NetworkBehaviour
     {
         GameObject bullet = Instantiate(projectile);
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
-        bullet.transform.position = cannon.transform.position + cannon.transform.up;
+        bullet.transform.position = cannon.transform.position + cannon.transform.up * 2;
         rb.velocity = cannon.transform.up * power;
+        gameObject.GetComponent<Animator>().SetTrigger("Fire");
 
         NetworkServer.Spawn(bullet);
     }

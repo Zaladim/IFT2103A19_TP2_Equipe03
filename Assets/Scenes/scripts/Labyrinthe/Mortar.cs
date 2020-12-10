@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
 
-public class Mortar : MonoBehaviour
+public class Mortar : NetworkBehaviour
 {
     [SerializeField] private GameObject projectile;
     [SerializeField] private GameObject cannon;
@@ -27,8 +27,10 @@ public class Mortar : MonoBehaviour
             Rigidbody rb = bullet.GetComponent<Rigidbody>();
             bullet.transform.position = cannon.transform.position + cannon.transform.up * 2;
             rb.velocity = (getVelocity(target.transform.position, bullet.transform.position, 5.0f));
+            NetworkServer.Spawn(bullet);
+            cooldown = 5.0f;
         }
-        cooldown = 5.0f;
+
 
     }
 

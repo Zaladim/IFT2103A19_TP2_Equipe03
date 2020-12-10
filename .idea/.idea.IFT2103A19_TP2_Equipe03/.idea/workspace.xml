@@ -14,8 +14,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/Player_Camera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/Player_Cannon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/Player_Collision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/StartGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/Player_health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/Labyrinthe/Mortar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/ParticleGenerator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -30,15 +32,18 @@
         <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Lobby/LobbyMainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_spawnSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/scripts/MyNetworkManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_Cannon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Labyrinthe/Trap Wall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Labyrinthe/TrapWall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_Camera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Projectile_Explosion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_Collision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/StartGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Labyrinthe/MoveWall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Labyrinthe/TrapWall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Labyrinthe/Mortar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_Move.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_Collision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Player_Cannon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/Projectile_Explosion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/scripts/ParticleGenerator.cs" />
       </list>
     </option>
   </component>
@@ -94,6 +99,10 @@
       <workItem from="1605689141248" duration="13267000" />
       <workItem from="1605773618097" duration="10278000" />
       <workItem from="1605862737981" duration="8986000" />
+      <workItem from="1606120588535" duration="8679000" />
+      <workItem from="1606209606953" duration="1151000" />
+      <workItem from="1607415297647" duration="4097000" />
+      <workItem from="1607592500232" duration="4341000" />
     </task>
     <servers />
   </component>

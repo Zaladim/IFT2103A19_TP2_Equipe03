@@ -362,12 +362,14 @@
               <e p="Mortar.cs" t="Include" />
               <e p="TrapWall.cs" t="Include" />
             </e>
+            <e p="ParticleGenerator.cs" t="Include" />
             <e p="Player_Camera.cs" t="Include" />
             <e p="Player_Cannon.cs" t="Include" />
             <e p="Player_Collision.cs" t="Include" />
             <e p="Player_health.cs" t="Include" />
             <e p="Player_Move.cs" t="Include" />
             <e p="Projectile_Explosion.cs" t="Include" />
+            <e p="StartGame.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

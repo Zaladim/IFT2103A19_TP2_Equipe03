@@ -1,27 +1,26 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class TrapWall : MonoBehaviour
+public class TrapWall : NetworkBehaviour
 {
     [SerializeField] private GameObject wall;
-    private bool up = false;
+    private bool up;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (up)
+        if (other.CompareTag("Player"))
         {
-            up = false;
-        }
-        else
-        {
-            up = true;
+            Activate();
         }
     }
 
     private void Update()
     {
+
         if (up && wall.transform.position.y <= 1)
         {
             wall.transform.Translate(wall.transform.up * Time.smoothDeltaTime);
@@ -37,5 +36,19 @@ public class TrapWall : MonoBehaviour
         {
             wall.transform.position = new Vector3(wall.transform.position.x, -4, wall.transform.position.z);
         }
+        
     }
+    
+    public void Activate()
+    {
+        if (up)
+        {
+            up = false;
+        }
+        else
+        {
+            up = true;
+        }
+    }
+    
 }
